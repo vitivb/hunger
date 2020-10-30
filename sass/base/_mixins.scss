@@ -1,0 +1,8 @@
+@mixin divider {
+
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: var(--main_color);
+}
+

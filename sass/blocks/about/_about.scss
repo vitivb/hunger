@@ -1,0 +1,41 @@
+.about {
+    padding: 100px 80px;
+    color: #000;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+        justify-content: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 135px;
+    }
+
+    .divider {
+        @include divider;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    &__col-2 {
+        position: relative;
+    }
+
+    .square {
+        position: absolute;
+        display: block;
+        width: 250px;
+        height: 250px;
+        top: 170px;
+        right: 30px;
+        border: solid 20px var(--main_color);
+
+    }
+}

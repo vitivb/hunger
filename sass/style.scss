@@ -1,0 +1,16 @@
+@import "libs/banny-font";
+@import "libs/bootstrap-reboot";
+@import "base/variables";
+@import "base/mixins";
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+@import "blocks/text/title-mod";
+@import "blocks/text/text-mod";
+@import "blocks/header/header";
+@import "blocks/buttons/buttons";
+@import "blocks/about/about";
+
+

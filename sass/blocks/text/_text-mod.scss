@@ -1,0 +1,21 @@
+.text {
+    font-family: "Open Sans", serif;
+
+    &_fz18 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    &_fz14 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &_fz12 {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+    }
+}
