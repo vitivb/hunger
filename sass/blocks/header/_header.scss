@@ -7,7 +7,20 @@
     color: #fff;
 
     &__title {
+        position: relative;
         text-align: center;
+
+        &:before {
+            content: "";
+
+            position: absolute;
+            z-index: 0;
+            top: -85px;
+            left: 50%;
+            height: 407px;
+            width: 1px;
+            background-color: var(--border_color);  
+        }
     }
 
     &__subtitle {
@@ -83,6 +96,8 @@
     }
 
     .divider {
+        position: relative;
+        z-index: 1;
         @include divider;
         margin: 0 auto;
     }
@@ -122,6 +137,17 @@
             background-color: rgba(0, 0, 0, 0);
             border: solid 1px var(--border_color);
             border-radius: 50%;
+        }
+
+        &:after {
+            content: "";
+
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            height: 95px;
+            width: 1px;
+            background-color: var(--border_color);
         }
     }
 
