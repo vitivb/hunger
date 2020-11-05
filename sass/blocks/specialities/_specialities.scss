@@ -1,0 +1,83 @@
+.specialities {
+    padding: 100px 80px 100px 205px;
+    background: url("../img/specialities/background.jpg") center center/cover no-repeat;
+    color:rgba(255, 255, 255, .9);
+
+    &__title {
+        margin: -50px 0 50px 0;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+
+        &:before {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            display: block;
+            width: 1px;
+            height: 777px;
+            background-color: var(--border_color);
+
+            content: "";
+        }
+
+        .square {
+            top: 175px;
+            left: -125px;
+            z-index: 10;
+
+            &:before {
+                position: absolute;
+                top: -245px;
+                right: 50px;
+                z-index: -1;
+                display: block;
+                width: 1px;
+                height: 777px;
+                background-color: var(--border_color);
+    
+                content: "";
+            }
+
+            &:after {
+                position: absolute;
+                top: -245px;
+                left: 1303px;
+                z-index: 0;
+                display: block;
+                width: 1px;
+                height: 777px;
+                background-color: var(--border_color);
+    
+                content: "";
+            }
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #fff;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .divider {
+        @include divider;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    &__col-2 {
+        padding-top: 115px;
+    }
+
+}

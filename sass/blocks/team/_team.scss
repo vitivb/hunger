@@ -4,15 +4,57 @@
     background: url("../img/chief/background.jpg") center center/cover no-repeat;
 
     &__title {
+        position: relative;
         text-align: center;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+
+        &:before {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            display: block;
+            width: 1px;
+            height: 777px;
+            background-color: var(--border_color);
+
+            content: "";
+        }
     }
 
     &__subtitle {
+        position: relative;
         text-align: center;
+
+        &:before {
+            position: absolute;
+            top: -184px;
+            right: 100px;
+            display: block;
+            width: 1px;
+            height: 777px;
+            background-color: var(--border_color);
+
+            content: "";
+        }
+
+        &:after {
+            position: absolute;
+            top: -184px;
+            left: -590px;
+            z-index: 0;
+            display: block;
+            width: 1px;
+            height: 777px;
+            background-color: var(--border_color);
+
+            content: "";
+        }
     }
 
     &__col-1 {
         position: relative;
+        z-index: 1;
         padding-top: 50px;
         background-color: inherit;
     }
