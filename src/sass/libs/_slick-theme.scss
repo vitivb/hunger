@@ -149,6 +149,8 @@
 }
 .slick-dots li button
 {
+    position: relative;
+
     font-size: 0;
     line-height: 0;
 
@@ -163,7 +165,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: #fff;
+    // background: #fff;
     border-radius: 50%;
 }
 .slick-dots li button:hover,
@@ -191,7 +193,7 @@
 
     content: '•';
     text-align: center;
-    font-size: 37px;
+    font-size: 45px;
 
     opacity: .25;
     color: #fff;
